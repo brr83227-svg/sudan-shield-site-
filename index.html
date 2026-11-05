@@ -40,7 +40,28 @@
     #accessGate p { font-size:17px; }
     #accessGate input { width:82%; }
   }
-</style>
+</style>@media (max-width: 480px) {
+  main {
+    width: calc(100% - 16px);
+    max-width: none;
+    margin: 12px auto;
+    padding: 4px;
+    box-sizing: border-box;
+  }
+
+  .card {
+    padding: 0;
+  }
+
+  .gallery-link {
+    max-width: none;
+  }
+
+  .gallery-link img {
+    width: 100%;
+    height: auto;
+  }
+}
 </head>
 <body>
 <section id="accessGate" aria-labelledby="gateTitle">
