@@ -34,45 +34,58 @@
   #accessGate button { padding:14px 30px; border:0; border-radius:10px; background:#159447;
     color:#fff; font-size:19px; font-weight:bold; box-shadow:0 2px 5px #0002; }
   #errorMessage { color:#b42318; min-height:1.5em; }
-  @media (max-width:480px) {#accessGate { margin-top:14vh; padding:34px 22px 40px; }
-    #accessGate #accessGate { margin-top:14vh; padding:34px 22px 40px; }
+    #accessGate button {
+    padding:14px 30px;
+    border:0;
+    border-radius:10px;
+    background:#159447;
+    color:#fff;
+    font-size:19px;
+    font-weight:bold;
+    box-shadow:0 2px 5px #0002;
+  }
+
+  #errorMessage {
+    color:#b42318;
+    min-height:1.5em;
+  }
+
+  @media (max-width: 480px) {
+    #accessGate {
+      width: calc(100% - 24px);
+      margin: 14vh auto 20px;
+      padding: 34px 22px 40px;
+      box-sizing: border-box;
+    }
+
     #gateTitle { font-size:26px; }
     #accessGate p { font-size:17px; }
-    #accessGate input { width:82%; }
-  }
-</style>@media (max-width: 480px) {
-  main {
-    width: calc(100% - 16px);
-    max-width: none;
-    margin: 12px auto;
-    padding: 4px;
-    box-sizing: border-box;
-  }
 
-  .card {
-    padding: 0;
-  }
+    #accessGate input {
+      width:100%;
+      box-sizing:border-box;
+    }
 
-  .gallery-link {
-    max-width: none;
-  }
+    main {
+      width:calc(100% - 16px);
+      max-width:none;
+      margin:12px auto;
+      padding:4px;
+      box-sizing:border-box;
+    }
 
-  .gallery-link img {
-    width: 100%;
-    height: auto;
+    .card { padding:0; }
+    .gallery-link { max-width:none; }
+
+    .gallery-link img {
+      display:block;
+      width:100%;
+      max-width:100%;
+      height:auto;
+      object-fit:contain;
+    }
   }
-}<style>
-@media (max-width: 480px) {
-  .gallery-link img {
-    display: block;
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    object-fit: contain;
-  }
-}
 </style>
- 
 </head>
 <body>
 <section id="accessGate" aria-labelledby="gateTitle">
